@@ -2,7 +2,7 @@
 
 Perfil de viagens desenvolvido como desafio prático de HTML e CSS da formação Full Stack da Rocketseat.
 
-O projeto tem como proposta criar uma página de perfil de viagens utilizando HTML semântico e CSS, com foco na organização dos elementos por meio do Flexbox.
+O projeto apresenta o perfil da viajante Isabela Torres, com navegação, informações pessoais, galeria de fotos e rodapé. A interface utiliza HTML semântico, CSS organizado por responsabilidade e layouts construídos com Flexbox.
 
 ## Preview
 
@@ -13,13 +13,23 @@ O projeto tem como proposta criar uma página de perfil de viagens utilizando HT
 - HTML5
 - CSS3
 - Flexbox
+- JavaScript
 
 ## Funcionalidades
 
-- Estrutura inicial de uma página de perfil de viagens.
+- Navegação com logotipo, busca, links e foto de perfil.
+- Seção de perfil com descrição, localização, países visitados e quantidade de fotos.
+- Galeria com 12 imagens de viagens.
+- Layout responsivo construído com Flexbox.
+- Galeria adaptável para diferentes larguras de tela:
+  - 4 imagens por linha em telas grandes;
+  - 3 imagens por linha em tablets;
+  - 2 imagens por linha em celulares;
+  - 1 imagem por linha em telas muito pequenas.
+- Rodapé empilhado verticalmente em telas de até `600px`.
+- Atualização automática do ano no rodapé usando JavaScript.
 - Organização dos estilos em arquivos separados.
 - Reset global para padronizar o comportamento dos elementos.
-- Layout preparado para construção com Flexbox.
 
 ## Como executar
 
@@ -32,14 +42,25 @@ Para acompanhar as alterações durante o desenvolvimento, também é possível 
 
 ```text
 .
-├── index.html          # Estrutura da página
-├── readme.md           # Documentação do projeto
+├── index.html              # Estrutura semântica da página
+├── readme.md               # Documentação do projeto
+├── js/
+│   └── script.js           # Atualização automática do ano
+├── assets/
+│   ├── Logo.svg            # Logotipo
+│   ├── profile_pic.png     # Foto do perfil
+│   ├── icons/              # Ícones de navegação e informações
+│   └── images/             # Imagens da galeria
 ├── styles/
-│   ├── global.css      # Reset e estilos globais
-│   └── index.css       # Estilos específicos da página
+│   ├── global.css          # Reset, variáveis e estilos globais
+│   ├── index.css           # Importação dos estilos
+│   ├── nav.css             # Navegação
+│   ├── header.css          # Perfil e informações
+│   ├── main.css            # Galeria responsiva
+│   └── footer.css          # Rodapé e comportamento mobile
 ├── .github/
-│   └── cover.png       # Imagem de preview do projeto
-└── .gitignore          # Arquivos ignorados pelo Git
+│   └── cover.png           # Imagem de preview do projeto
+└── .gitignore              # Arquivos ignorados pelo Git
 ```
 
 ## Aprendizados
@@ -50,14 +71,9 @@ Este desafio pratica conceitos fundamentais de desenvolvimento web, incluindo:
 - Separação entre estilos globais e estilos específicos.
 - Uso de seletores e propriedades CSS.
 - Organização de layouts com Flexbox.
+- Criação de layouts responsivos com `flex-wrap`, `flex-basis` e media queries.
+- Uso de `aspect-ratio` para manter as imagens quadradas.
 - Padronização de margens, preenchimentos e dimensionamento com `box-sizing`.
-
-## Próximos passos
-
-- Construir o cabeçalho e o perfil do viajante.
-- Adicionar informações sobre o perfil e os destinos visitados.
-- Inserir as imagens da galeria de viagens.
-- Finalizar o layout responsivo para diferentes tamanhos de tela.
 
 ## Sobre mim
 

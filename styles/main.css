@@ -6,7 +6,31 @@ main {
 }
 
 main img {
-  width: 286px;
-  height: 286px;
+  flex: 1 1 calc((100% - 72px) / 4);
+  min-width: 0;
+  aspect-ratio: 1;
   object-fit: cover;
+}
+
+@media (max-width: 900px) {
+  main img {
+    flex-basis: calc((100% - 48px) / 3);
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    gap: 12px;
+    padding-block: 16px;
+  }
+
+  main img {
+    flex-basis: calc((100% - 12px) / 2);
+  }
+}
+
+@media (max-width: 400px) {
+  main img {
+    flex-basis: 100%;
+  }
 }
