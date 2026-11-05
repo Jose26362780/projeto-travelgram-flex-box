@@ -1,6 +1,6 @@
 # Perfil de Viagens - Travelgram
 
-Perfil de viagens desenvolvido como desafio prático de HTML e CSS da formação Full Stack da Rocketseat.
+Perfil de viagens desenvolvido como projeto guiado e prático de HTML e CSS da formação Full Stack da Rocketseat.
 
 O projeto apresenta o perfil da viajante Isabela Torres, com navegação, informações pessoais, galeria de fotos e rodapé. A interface utiliza HTML semântico, CSS organizado por responsabilidade e layouts construídos com Flexbox.
 
